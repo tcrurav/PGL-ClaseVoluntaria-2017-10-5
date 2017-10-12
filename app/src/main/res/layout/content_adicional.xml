@@ -21,4 +21,33 @@
         android:layout_height="wrap_content"
         android:text="Aprétame"/>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditTextNombre"
+            android:hint="Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditTextEdad"
+            android:inputType="number"
+            android:maxLength="3"
+            android:hint="Edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        editT
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonAgnadir"
+        android:text="Añadir Alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

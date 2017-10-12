@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,6 +81,14 @@ public class ImagenFragment extends Fragment{
         TextView textViewPepe = (TextView) view.findViewById(R.id.textViewPepe);
         Principal miApp = (Principal)getActivity().getApplication();
         textViewPepe.setText(miApp.getPepe());
+
+        //Nuevo para Agoney
+        TextView textViewAlumnos = (TextView) view.findViewById(R.id.textViewAlumnos);
+
+        ArrayList<Alumno> alumnos = miApp.getAlumnos();
+        for(Alumno alumno : alumnos){
+            textViewAlumnos.append("\n" + alumno.getNombre() + " - " + alumno.getEdad());
+        }
 
         return view;
     }
